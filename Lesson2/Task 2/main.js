@@ -40,7 +40,7 @@ if (time<=14){
 } else if (time <=29){
     console.log('Друга чверть години')
 } else if (time <=44){
-    console.log('Третья чверть години')
+    console.log('Третя чверть години')
 } else {
     console.log('Четверта чверть години')
 }
@@ -58,8 +58,46 @@ if (day >=1 && day <=10){
 } else{
     console.log('?????')
 }
+
+
+
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+
+let timetable = 1;
+switch (timetable) {
+    case 1:
+        console.log('Monday');
+        break;
+    case 2:
+        console.log('Tuesday');
+        break;
+    case 3:
+        console.log('Wednesday');
+        break;
+    case 4:
+        console.log('Thursday');
+        break;
+    case 5:
+        console.log('Friday');
+        break;
+
+    default:
+        console.log('?????')
+}
+
+
+
 //     - Користувач вводить або має два числа.
 //         Потрібно знайти та вивести максимальне число з тих двох .
 //         Також потрібно врахувати коли введені рівні числа.
 
+let n1 = +prompt('Введіть перше число:')
+let n2 = +prompt('Введіть друге число:')
+
+if (n1 > n2){
+    console.log(`Число ${n1} є більшим.`)
+} else if (n1 < n2){
+    console.log(`Число ${n2} є більшим.`)
+} else {
+    console.log("Введені числа рівні.")
+}
